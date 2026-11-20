@@ -1,0 +1,55 @@
+:root {
+  --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  --surface-bg: rgba(30, 41, 59, 0.72);
+  --surface-border: rgba(255, 255, 255, 0.12);
+  --surface-hover: rgba(51, 65, 85, 0.8);
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --accent: #38bdf8;
+  --accent-soft: rgba(56, 189, 248, 0.18);
+  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.25);
+  --radius-lg: 20px;
+  --radius-md: 12px;
+  --radius-sm: 8px;
+}
+
+[data-theme='light'] {
+  --bg-gradient: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+  --surface-bg: rgba(255, 255, 255, 0.78);
+  --surface-border: rgba(15, 23, 42, 0.08);
+  --surface-hover: rgba(241, 245, 249, 0.95);
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  --accent: #0284c7;
+  --accent-soft: rgba(2, 132, 199, 0.12);
+  --shadow-card: 0 8px 24px rgba(15, 23, 42, 0.08);
+}
+
+/* Dynamic Weather Gradients */
+[data-theme='dark'].theme-clear {
+  --bg-gradient: linear-gradient(135deg, #0c4a6e 0%, #1e3a8a 55%, #0f172a 100%);
+}
+[data-theme='dark'].theme-cloudy {
+  --bg-gradient: linear-gradient(135deg, #1e293b 0%, #334155 60%, #0f172a 100%);
+}
+[data-theme='dark'].theme-rain {
+  --bg-gradient: linear-gradient(135deg, #0f172a 0%, #1e1b4b 60%, #172554 100%);
+}
+[data-theme='dark'].theme-snow {
+  --bg-gradient: linear-gradient(135deg, #1e293b 0%, #475569 100%);
+}
+[data-theme='dark'].theme-night {
+  --bg-gradient: linear-gradient(135deg, #020617 0%, #0f172a 60%, #1e1b4b 100%);
+}
+
+[data-theme='light'].theme-clear {
+  --bg-gradient: linear-gradient(135deg, #bae6fd 0%, #7dd3fc 50%, #e0f2fe 100%);
+}
+[data-theme='light'].theme-cloudy {
+  --bg-gradient: linear-gradient(135deg, #cbd5e1 0%, #e2e8f0 100%);
+}
+[data-theme='light'].theme-rain {
+  --bg-gradient: linear-gradient(135deg, #94a3b8 0%, #cbd5e1 100%);
+}

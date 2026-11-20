@@ -1,0 +1,100 @@
+.ds-search-wrap {
+  position: relative;
+  flex: 1;
+  max-width: 440px;
+  min-width: 240px;
+}
+
+.ds-search-box {
+  display: flex;
+  align-items: center;
+  background: var(--surface-bg);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-md);
+  padding: 0 0.65rem;
+  height: 42px;
+  backdrop-filter: blur(12px);
+}
+
+.ds-search-box:focus-within {
+  border-color: var(--accent);
+}
+
+.ds-search-input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  color: var(--text-primary);
+  font-size: 0.95rem;
+  padding: 0 0.5rem;
+  outline: none;
+}
+
+.ds-search-input::placeholder {
+  color: var(--text-muted);
+}
+
+.ds-locate-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: var(--accent-soft);
+  color: var(--accent);
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+}
+
+.ds-dropdown {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  background: var(--surface-bg);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-md);
+  backdrop-filter: blur(18px);
+  box-shadow: var(--shadow-card);
+  z-index: 30;
+  overflow: hidden;
+}
+
+.ds-dropdown-section {
+  padding: 0.45rem 0.85rem 0.25rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+.ds-dropdown-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 0.85rem;
+  border: none;
+  background: transparent;
+  color: var(--text-primary);
+  text-align: left;
+  font-size: 0.9rem;
+}
+
+.ds-dropdown-item:hover {
+  background: var(--surface-hover);
+}
+
+.ds-geo-error {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  background: #7f1d1d;
+  color: #fecaca;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  z-index: 25;
+}
